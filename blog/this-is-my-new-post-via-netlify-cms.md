@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/blog.njk
 tags: blog
 title: This is my new post via netlify cms
 date: 2021-05-26T19:28:04.447Z

@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-post
+templateClass: tmpl-blog
 ---
 <h1>{{ title }}</h1>
 
@@ -11,6 +11,10 @@ templateClass: tmpl-post
 {%- endfor %}
 
 <img src="{{ thumbnail | url }}"/>
+<p>
+  <span style="font-weight: bold;">Rating:</span>
+  {{ rating }}
+</p>
 {{ content | safe }}
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
